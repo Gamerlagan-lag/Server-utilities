@@ -31,47 +31,12 @@ bot.variables({
 	afkwhy: '', //DONT EDIT
 	time: '', //DONT EDIT
 	Ticket: '', //DO EDIT (put your ticket catergorie id)
-staffrole: '' //DO EDIT (put your staff role id)
+staffrole: '', //DO EDIT (put your staff role id)
+	logchannel: '' //DO EDIT (put your staff log channel id)
 });
 
-bot.loopCommand({
-	code: `
-  $editChannel[850762211848749117;$default;Members: $sub[$membersCount;$botCount] ]`,
-	channel: '850762211848749117',
-	executeOnStartup: true,
-	every: 30000
-});
-bot.loopCommand({
-	code: `
-  $editChannel[850762608783917088;$default;Bots: $botCount]`,
-	channel: '850762608783917088',
-	executeOnStartup: true,
-	every: 30000
-});
-
-bot.loopCommand({
-	code: `
-  $editChannel[850762407344996352;$default;Boosts: $serverBoostCount]`,
-	channel: '850762407344996352',
-	executeOnStartup: true,
-	every: 30000
-});
-bot.loopCommand({
-	code: `
-  $editChannel[850762294505111573;$default;➡ dsc.gg/lytc ⬅]`,
-	channel: '850762294505111573',
-	executeOnStartup: true,
-	every: 30000
-});
-bot.loopCommand({
-	code: `
-  $editChannel[850762178050916362;$default;Total Members: $membersCount ]`,
-	channel: '850762178050916362',
-	executeOnStartup: true,
-	every: 30000
-});
 bot.deletedCommand({
-    channel: '850763306704961567',
+    channel: '$getVar[logchannel]',
     code: `
 $title[Message Deleted]
   $description[Message from $username, was deleted in <#$channelUsed>: \`$message\`]
@@ -80,7 +45,7 @@ $title[Message Deleted]
 bot.onMessageDelete()
 
 bot.updateCommand({
-	channel: '850763306704961567',
+	channel: '$getVar[logchannel]',
 	code: `$title[Message Updated!]
         $description[Message edited from $username in <#$channelUsed>:
 $message
@@ -89,7 +54,7 @@ Old message: $oldMessage]`
 bot.onMessageUpdate();
 
 bot.roleCreateCommand({
-	channel: '850763306704961567',
+	channel: '$getVar[logchannel]',
 	code: `
 Role Created:
 $newRole[name]
@@ -97,7 +62,7 @@ $newRole[name]
 });
 bot.onRoleCreate();
 bot.roleDeleteCommand({
-	channel: '850763306704961567',
+	channel: '$getVar[logchannel]',
 	code: `
 Role Deleted:
 Old Name: $oldRole[name]
@@ -105,7 +70,7 @@ Old Name: $oldRole[name]
 });
 bot.onRoleDelete();
 bot.roleUpdateCommand({
-	channel: '850763306704961567',
+	channel: '$getVar[logchannel]',
 	code: `
 Role Name Updated:
 Old Name: $oldRole[name]
@@ -114,7 +79,7 @@ New Name: $newRole[name]
 });
 bot.onJoined();
 bot.leaveCommand({
-	channel: '850763306704961567',
+	channel: '$getVar[logchannel]',
 	code: `$username left what a noob!`
 });
 bot.onLeave();
