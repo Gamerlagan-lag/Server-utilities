@@ -7,5 +7,5 @@ module.exports =({
 You have been warned!
 Reason:$noMentionMessage
 Moderator: <@$authorID>]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]!=true;]`
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]`
 })
