@@ -1,6 +1,6 @@
 How To Setup!
 ```
-Step 1. Create a application at [Developer Portal](https://discord.com/developers/applications) then go to bot and press new bot.
+Step 1. Create a application at https://discord.com/developers/applications then go to bot and press new bot.
 Step 2. Copy the github link
 Step 3. Go to https://replit.com
 Step 4. Create an account if you dont already have one
