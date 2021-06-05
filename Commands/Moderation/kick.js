@@ -15,6 +15,6 @@ module.exports = ({
  $argsCheck[1;{title: :mg_reactno: Error!} {description: Specify a user!} {color: #fc0000}]
  $onlyPerms[ban;{title: :mg_reactno: Error!} {description: Not enough rights! Required rights - \`Administrator or ban\`} {color: RED}]
 $onlyBotPerms[kick;{title: Error} {description: Bot doesn't have ban permissions/Bot role below user role} {color: #fc0000}]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]!=true;]
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]
  `
 })
