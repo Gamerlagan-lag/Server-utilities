@@ -3,7 +3,7 @@ const config = require('./config.json');
 const Aoijs = require('aoi.js');
 console.log('Linked to config.json and ready to be 24/7!')
 const bot = new Aoijs.Bot({
-	token: 'ODA1OTMyODYxMzM2NDUzMTMx.YBiFdw.0qPBgnTGncb8Hfa9DMLHA2dHxhI',
+	token: 'your bot token',
 	prefix: config.prefix,
 	autoUpdate: true
 });
