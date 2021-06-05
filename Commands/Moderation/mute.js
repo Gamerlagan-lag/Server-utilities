@@ -15,4 +15,4 @@ $giveRole[$mentioned[1];$roleID[Muted]]
  $argsCheck[>1;Please mention someone to mute]
  $suppressErrors[Sorry but something went wrong! Please DM LaganYT#0001]
  $onlyPerms[manageroles;You need manage roles permission to use this command]
- $onlyIf[$hasRole[$authorID;$getVar[staffrole]!=true;]`})
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]`})
