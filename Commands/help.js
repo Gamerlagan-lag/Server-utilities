@@ -16,7 +16,7 @@ $description[Name: $commandInfo[$message;name]
 Ussage: $commandInfo[$message;ussage]
 Description: $commandInfo[$message;description]
 Aliases: $commandInfo[$message;aliases]]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]]==true;]
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]
 $endelseIf
 $endif
 $suppressErrors[Sorry but something went wrong! Please DM LaganYT#0001]
