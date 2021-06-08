@@ -8,5 +8,9 @@ Step 5. Press the `New Repl` button
 Step 6. Press import from github
 Step 7. Paste the github url
 Step 8. Change the config.json file to your liking and change 'token' in index.js to your bot's token
+Step 9. Go to uptimerobot.com and login/signup press 'Add New Monitor' select 'HTTP(s)'
+-Friendly Name=(anything)
+URL (or IP)=your repl url (example: https://test.servers.repl.co)
+Then press "Create Montior"
 ```
 For more help join our [discord](https://discord.gg/VJ7FfJZMjg)
