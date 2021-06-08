@@ -10,4 +10,4 @@ $takeRole[$mentioned[1];832030527300829255]
  $onlyIf[$roleExists[$findRole[Muted]]==true;I can't find Role "Muted" Please create that role and try again ]
  $argsCheck[>1;Please mention someone to unmute]
  $suppressErrors[Sorry but something went wrong! Please DM LaganYT#0001]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]`})
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]==true;]`})
