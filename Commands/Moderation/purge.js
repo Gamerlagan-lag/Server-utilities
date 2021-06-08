@@ -12,5 +12,5 @@ $description[**$message messages have been deleted!**]
 $addReactions[🤖]
 $deleteIn[5s]
 $suppressErrors[Sorry but something went wrong! Please DM LaganYT#0001]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]`
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]==true;]`
 })
