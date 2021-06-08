@@ -12,5 +12,5 @@ $title[__**Revoke Warn**__]
 $footer[Requested by @$username]
 $color[d7342a]
 $suppressErrors[Sorry but something went wrong! Please DM LaganYT#0001]
-$onlyIf[$hasRole[$authorID;$getVar[staffrole]]!=true;]`
+$onlyIf[$hasRole[$authorID;$getVar[staffrole]]==true;]`
 })
